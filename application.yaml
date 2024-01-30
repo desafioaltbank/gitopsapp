@@ -5,10 +5,8 @@ metadata:
   namespace: argocd
 spec: 
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-      allowEmpty: true
+    syncOptions:
+    - PruneLast=true
   destination: 
     namespace: guestbook
     server: "https://kubernetes.default.svc"
