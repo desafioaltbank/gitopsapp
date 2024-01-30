@@ -4,6 +4,9 @@ metadata:
   name: guestbook
   namespace: argocd
 spec: 
+  syncPolicy:
+    automated:
+      prune: true
   destination: 
     namespace: guestbook
     server: "https://kubernetes.default.svc"
