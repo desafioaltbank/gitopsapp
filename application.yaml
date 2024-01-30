@@ -13,7 +13,7 @@ spec:
     repoURL: "https://github.com/desafioaltbank/app-guestbook.git"
     targetRevision: main
     kustomize:
-      namePrefix: staging-
+      namePrefix: dev-
       commonLabels:
         app: demo
   syncPolicy:
