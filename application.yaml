@@ -9,9 +9,9 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: kustomize-guestbook
+    path: .
     repoURL: "https://github.com/desafioaltbank/app-guestbook.git"
-    targetRevision: master
+    targetRevision: main
     kustomize:
       namePrefix: staging-
       commonLabels:
